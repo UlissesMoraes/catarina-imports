@@ -15,13 +15,10 @@ export const whatsappLink = (message?: string) => {
 };
 
 export const images = {
-  logo: "/images/logo/logo.svg",
-  hero: "/images/hero/hero-loja.svg",
-  sobre: ["/images/sobre/sobre-1.svg", "/images/sobre/sobre-2.svg"],
-  assistencia: [
-    "/images/assistencia/bancada-1.svg",
-    "/images/assistencia/bancada-2.svg",
-  ],
+  logo: "/images/logo/logo.png",
+  hero: "/images/hero/hero-loja.jpg",
+  sobre: ["/images/sobre/sobre-1.jpg", "/images/sobre/sobre-2.jpg"],
+  assistencia: ["/images/loja/balcao-iphones.jpg", "/images/sobre/sobre-2.jpg"],
 };
 
 export type Product = {
@@ -38,7 +35,7 @@ export const products: Product[] = [
     name: "iPhone",
     description:
       "Os modelos mais recentes de iPhone, com procedência garantida e garantia Catarina Imports.",
-    image: "/images/produtos/iphone.svg",
+    image: "/images/produtos/iphone.webp",
     highlights: [
       "Linhas iPhone 15 e 16",
       "Aparelhos novos e seminovos selecionados",
@@ -51,7 +48,7 @@ export const products: Product[] = [
     name: "MacBook",
     description:
       "MacBook Air e MacBook Pro com chips Apple Silicon para performance e portabilidade premium.",
-    image: "/images/produtos/macbook.svg",
+    image: "/images/produtos/macbook.jpg",
     highlights: [
       "MacBook Air e MacBook Pro",
       "Chips M-series Apple Silicon",
@@ -64,7 +61,7 @@ export const products: Product[] = [
     name: "iPad",
     description:
       "iPad, iPad Air e iPad Pro para criar, estudar e trabalhar com a fluidez do ecossistema Apple.",
-    image: "/images/produtos/ipad.svg",
+    image: "/images/produtos/ipad.jpg",
     highlights: [
       "iPad, Air e Pro",
       "Compatível com Apple Pencil",
@@ -77,7 +74,7 @@ export const products: Product[] = [
     name: "AirPods",
     description:
       "AirPods, AirPods Pro e AirPods Max com áudio espacial e cancelamento de ruído.",
-    image: "/images/produtos/airpods.svg",
+    image: "/images/produtos/airpods.jpg",
     highlights: [
       "AirPods, Pro e Max",
       "Áudio espacial",
@@ -90,7 +87,7 @@ export const products: Product[] = [
     name: "Apple Watch",
     description:
       "Apple Watch Series e Ultra para saúde, treino e conectividade no seu pulso.",
-    image: "/images/produtos/apple-watch.svg",
+    image: "/images/produtos/apple-watch.png",
     highlights: [
       "Series e Ultra",
       "Pulseiras e acessórios",
@@ -172,35 +169,35 @@ export type GalleryImage = {
 
 export const galleryImages: GalleryImage[] = [
   {
-    src: "/images/loja/balcao-iphones.svg",
+    src: "/images/loja/balcao-iphones.jpg",
     alt: "Balcão de vidro com iPhones em exposição e logo Catarina Imports",
     category: "fachada",
     span: "row-span-2",
   },
   {
-    src: "/images/loja/interior-ambiente.svg",
+    src: "/images/loja/interior-ambiente.jpg",
     alt: "Ambiente interno da loja com piso de madeira, parede verde e iluminação LED",
     category: "interior",
     span: "col-span-2",
   },
   {
-    src: "/images/loja/parede-produtos.svg",
-    alt: "Parede de produtos com capas e acessórios organizados em grid",
+    src: "/images/produtos/iphone.webp",
+    alt: "iPhone em exposição na Catarina Imports",
     category: "produtos",
   },
   {
-    src: "/images/loja/lounge.svg",
+    src: "/images/sobre/sobre-1.jpg",
     alt: "Área de espera com logo Catarina Imports e parede de tijolinhos",
     category: "interior",
   },
   {
-    src: "/images/assistencia/bancada-1.svg",
-    alt: "Bancada de assistência técnica Catarina Imports",
+    src: "/images/sobre/sobre-2.jpg",
+    alt: "Balcão de produtos Catarina Imports",
     category: "assistencia",
   },
   {
-    src: "/images/sobre/sobre-2.svg",
-    alt: "Equipe Catarina Imports atendendo clientes",
+    src: "/images/hero/hero-loja.jpg",
+    alt: "Fachada e interior da Catarina Imports",
     category: "equipe",
   },
 ];
