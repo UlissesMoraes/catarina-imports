@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { whatsappLink } from "@/data/site";
+import { images, whatsappLink } from "@/data/site";
 
 const links = [
   { href: "#produtos", label: "Produtos" },
@@ -36,9 +37,14 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="#home" className="flex items-center gap-2">
-          <span className="text-lg font-semibold tracking-tight">
-            catarina <span className="font-light">IMPORTS</span>
-          </span>
+          <Image
+            src={images.logo}
+            alt="Catarina Imports"
+            width={160}
+            height={40}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
