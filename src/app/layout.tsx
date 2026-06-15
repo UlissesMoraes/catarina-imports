@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import { seo, company } from "@/data/site";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const dancingScript = Dancing_Script({
+  variable: "--font-script",
   subsets: ["latin"],
   display: "swap",
 });
@@ -76,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} antialiased`}>
+    <html lang="pt-BR" className={`${inter.variable} ${dancingScript.variable} antialiased`}>
       <body className="min-h-screen bg-background text-foreground">
         {children}
         <script
