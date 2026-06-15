@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1200" viewBox="0 0 2000 1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a3a3c"/>
+      <stop offset="1" stop-color="#0c4a3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="1200" fill="url(#g)"/>
+  <g fill="#ffffff" opacity="0.92" font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="1000" y="590" font-size="90.9090909090909" font-weight="600" letter-spacing="2">Ambiente Interno</text>
+    <text x="1000" y="628" font-size="36.36363636363637" opacity="0.75" letter-spacing="4">PAREDE VERDE + MADEIRA</text>
+  </g>
+</svg>

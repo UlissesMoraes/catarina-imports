@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Apple-inspired neutrals */
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --muted: #f5f5f7;
+  --muted-foreground: #6e6e73;
+  --border: #d2d2d7;
+
+  /* Catarina Imports brand palette (inspired by the store's green wall + warm gold accents) */
+  --brand: #0c4a3a;
+  --brand-foreground: #ffffff;
+  --accent-gold: #c8a45c;
+
+  /* Dark "feature card" surfaces, Apple style */
+  --surface-dark: #0a0a0b;
+  --surface-dark-foreground: #f5f5f7;
+
+  --radius: 1.25rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-accent-gold: var(--accent-gold);
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-foreground: var(--surface-dark-foreground);
+
+  --font-sans: var(--font-inter);
+
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 0.5rem);
+  --radius-2xl: calc(var(--radius) + 1rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, "SF Pro Display", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Apple-style large, tight headline rhythm */
+.display-1 {
+  font-size: clamp(2.75rem, 8vw, 6.5rem);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.display-2 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section-pad {
+  padding-top: clamp(4rem, 10vw, 8rem);
+  padding-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+/* Subtle parallax helper */
+.will-parallax {
+  will-change: transform;
+}
+
+/* Custom scrollbar for horizontal scroll-snap galleries */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
