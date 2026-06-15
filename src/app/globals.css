@@ -34,7 +34,7 @@
   --color-surface-dark-foreground: var(--surface-dark-foreground);
 
   --font-sans: var(--font-inter);
-  --font-script: var(--font-script);
+  --font-script: var(--font-dancing);
 
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 0.5rem);

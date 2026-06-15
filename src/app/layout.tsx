@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const dancingScript = Dancing_Script({
-  variable: "--font-script",
+  variable: "--font-dancing",
   subsets: ["latin"],
   display: "swap",
 });
