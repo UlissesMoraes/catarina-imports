@@ -6,6 +6,7 @@ import { Produtos } from "@/components/sections/Produtos";
 import { Assistencia } from "@/components/sections/Assistencia";
 import { Depoimentos } from "@/components/sections/Depoimentos";
 import { Galeria } from "@/components/sections/Galeria";
+import { Instagram } from "@/components/sections/Instagram";
 import { Sobre } from "@/components/sections/Sobre";
 import { Mapa } from "@/components/sections/Mapa";
 import { Contato } from "@/components/sections/Contato";
@@ -20,6 +21,7 @@ export default function Home() {
         <Assistencia />
         <Depoimentos />
         <Galeria />
+        <Instagram />
         <Sobre />
         <Mapa />
         <Contato />
