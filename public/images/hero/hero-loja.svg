@@ -6,8 +6,4 @@
     </linearGradient>
   </defs>
   <rect width="1920" height="1280" fill="url(#g)"/>
-  <g fill="#ffffff" opacity="0.92" font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
-    <text x="960" y="630" font-size="87.27272727272727" font-weight="600" letter-spacing="2">CATARINA IMPORTS</text>
-    <text x="960" y="668" font-size="34.90909090909091" opacity="0.75" letter-spacing="4">FOTO REAL DA FACHADA / BALCAO</text>
-  </g>
 </svg>
