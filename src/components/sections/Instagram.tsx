@@ -14,7 +14,6 @@ const reels: Reel[] = [
   { src: "/videos/reel-1.mp4", poster: "/images/instagram/reel-1.jpg", link: "https://www.instagram.com/p/DW4lgMIP0qn/" },
   { src: "/videos/reel-2.mp4", poster: "/images/instagram/reel-2.jpg", link: "https://www.instagram.com/p/DX4XlWWhj8a/" },
   { src: "/videos/reel-3.mp4", poster: "/images/instagram/reel-3.jpg", link: "https://www.instagram.com/p/DXh1nWOGfs3/" },
-  { src: "/videos/reel-4.mp4", poster: "/images/instagram/reel-4.jpg", link: "https://www.instagram.com/p/DVzHgDokRS4/" },
 ];
 
 function ReelCard({ reel }: { reel: Reel }) {
@@ -65,7 +64,7 @@ export function Instagram() {
           description="Veja os bastidores, lançamentos e atendimentos direto do nosso perfil. @catarina.imports"
         />
 
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {reels.map((reel, i) => (
             <Reveal key={reel.link} delay={(i % 4) * 0.05}>
               <ReelCard reel={reel} />
