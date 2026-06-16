@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { images, whatsappLink } from "@/data/site";
 
@@ -62,7 +62,16 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href="https://www.instagram.com/catarina.imports"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-border/60 text-foreground/70 transition-colors hover:border-pink-400 hover:text-pink-500"
+          >
+            <Instagram className="h-4 w-4" />
+          </a>
           <Button
             asChild
             variant="whatsapp"
@@ -102,6 +111,15 @@ export function Header() {
                 {l.label}
               </a>
             ))}
+            <a
+              href="https://www.instagram.com/catarina.imports"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-base font-medium text-pink-500"
+            >
+              <Instagram className="h-5 w-5" />
+              Instagram
+            </a>
             <Button asChild variant="whatsapp" className="mt-2 w-full rounded-full">
               <a href={whatsappLink("Olá! Vim pelo site da Catarina Imports.")} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-4 w-4" />
