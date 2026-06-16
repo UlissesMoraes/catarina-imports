@@ -68,7 +68,8 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-border/60 text-foreground/70 transition-colors hover:border-pink-400 hover:text-pink-500"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-white transition-opacity hover:opacity-80"
+            style={{ background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%)" }}
           >
             <Instagram className="h-4 w-4" />
           </a>

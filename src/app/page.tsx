@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { FloatingInstagram } from "@/components/FloatingInstagram";
 import { Hero } from "@/components/sections/Hero";
 import { Produtos } from "@/components/sections/Produtos";
 import { Assistencia } from "@/components/sections/Assistencia";
@@ -28,6 +29,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <FloatingInstagram />
     </>
   );
 }
